@@ -8,4 +8,4 @@ When the brightness is adjusted manually, the daemon takes this into account. In
 
 `sudo amblightd`
 
-It must be run as root.
+It must be run as root. (or a user who can write to and read from `/proc/acpi/call` and your backlight file, and can read from `/sys/bus/acpi/devices/ACPI0008:00/iio:device0/in_illuminance_input`)
